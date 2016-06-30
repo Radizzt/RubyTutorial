@@ -1,2 +1,32 @@
 <h1>Demo#hello</h1>
 <p>Harro World</p>
+
+
+<% 11 + 1 %>
+<%= 11+1 %>
+
+<% target = "world" %>
+
+<%= "hello #{target} "%> <br />
+
+<% 3.times do
+  puts "xxx"
+end
+%>
+
+<% @array.each do |n|%>
+  <%=  n %><br />
+<%end
+%>
+
+<%= link_to("index page", {:controller => 'demo', :action => 'index'}); %>
+
+<h2>params:</h2>
+<p>ID: <%=params[:id] %></p>
+<p>ID: <%= @id %></p>
+<p>PAGE: <%= @page %></p>
+<p>next PAGE: <%= @page + 1 %></p>
+<hr />
+<h2>params.inspect</h2>
+<p><%= params.inspect %></p>
+
